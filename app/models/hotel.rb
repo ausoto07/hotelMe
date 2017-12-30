@@ -9,5 +9,7 @@ validates :name, presence: true
   # def room_service
   #   "This is room service, how may I help you?"
   # end
-
+def to_s
+  return self.name.split.map(&:capitalize)*' '
+end
 end
